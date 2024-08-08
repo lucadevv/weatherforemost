@@ -1,30 +1,62 @@
-# Basic Flutter application test
+![MasterHeader](https://zphhqkbfmmilwzqcmdgu.supabase.co/storage/v1/object/public/profile/tiktokclone.webp)
 
-In this test, it is expected that you can build a simple Android application with good programming practices and enough validations to avoid any inconvenience to the end user.
+## Download APK
+Download the latest version of the app:
+<a href="https://zphhqkbfmmilwzqcmdgu.supabase.co/storage/v1/object/public/videos/weatherForemost.apk?t=2024-08-08T20%3A06%3A41.232Z">Download APK</a>
 
-In this evaluation, the basic knowledge of Flutter will be tested by the developer and the way in which it develops under a real project scenario.
+#TimeFirst
+ Welcome to the test repository, a mobile application designed to bring the weather from other cities. This project shows my experience in developing mobile applications using Flutter and demonstrates advanced techniques in handling real-time data from the ACCUWEATHERAPI API, employing clean architecture principles and state management with Flutter Bloc.
 
-## Description
+#Characteristics
 
-Using a public API and a provided design, an application must be created in which the following themes will be used:
-- Handling dynamic view lists
-- API consumption
-- Exception handling
-- Null data validation
-- Interface design
+ Clean Architecture: The application is structured using a clean architecture, ensuring scalability, maintainability, and testability.
 
-## Assessment
-Will be evaluated:
-- Quality, readability and documentation of the code.
-- Good programming practices.
-- Language code conventions.
+ Flutter Bloc – Uses Flutter Bloc for efficient state management across different application modules.
 
-## About
-As part of our commitment to provide the necessary tools, documentation about the topics covered in the test is attached below, however, it is expected that the developer will investigate further and can provide more knowledge.
-- [Dynamic Lists](https://esflutter.dev/docs/cookbook/lists/mixed-list)
-- [API consumption](https://esflutter.dev/docs/cookbook/networking/fetch-data)
-- [Null data validation](https://devjaime.medium.com/dart-null-safety-una-gu%C3%ADa-para-los-tipos-que-no-aceptan-valores-nulos-44767a116da0)
-- [Effective Dart](https://dart.dev/guides/language/effective-dart)
+# Used technology
+ Flutter – for creating high-quality cross-platform mobile apps.
+ API: AccuWeatherApi.
+ Dart – The programming language used in conjunction with Flutter.
 
-#### Note:
-- The test consists of the topics that were mentioned above. No point in the actual test will be about anything that has not been mentioned in this document.
+#Project structure
+ Logging Page: You can add a city in the search engine in real time and select to add.
+
+
+
+
+SECURITY API-KEYS: flutter-dart-define
+
+ To configure the api, you must have or create a caperta in the main root,
+.vscode/luaunch.json
+
+ Then create an api-keys.json file in the root path:
+ {
+ "api-key": "",
+ "base-url": ""
+ }
+
+ Have the .vscode folder in the main root, then create a launch.json file and have this configuration (this configuration is to safely handle apikys):
+ {
+ "version": "0.2.0",
+ "settings": [
+ {
+ "name": "Start",
+ "request": "release",
+ "type": "dart",
+ "program": "lib/main.dart",
+ "arguments": [
+"--dart-define-from-file=api-keys.json"
+ ]
+ }
+ ]
+ }
+
+
+#Architecture
+ This project adheres to clean architecture guidelines, which are structured as follows:
+
+ Data Layer: Manages data transactions and transformations to and from the database.
+
+ Domain layer: Contains entities and business logic.
+
+ Presentation Layer: Comprises UI and state management components handled by Flutter Bloc.
