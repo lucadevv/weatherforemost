@@ -1,4 +1,3 @@
-![MasterHeader](https://zphhqkbfmmilwzqcmdgu.supabase.co/storage/v1/object/public/profile/tiktokclone.webp)
 
 ## Download APK
 Download the latest version of the app:
