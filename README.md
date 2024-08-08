@@ -21,35 +21,35 @@ Download the latest version of the app:
 #Project structure
  Logging Page: You can add a city in the search engine in real time and select to add.
 
+#SECUTIRY
 
+ 
+    SECURITY API-KEYS: flutter-dart-define
 
+    To configure the api, you must have or create a caperta in the main root,
+    .vscode/luaunch.json
 
-SECURITY API-KEYS: flutter-dart-define
+    Then create an api-keys.json file in the root path:
+    {
+       "api-key": "",
+       "base-url": ""
+    }
 
- To configure the api, you must have or create a caperta in the main root,
-.vscode/luaunch.json
-
- Then create an api-keys.json file in the root path:
- {
- "api-key": "",
- "base-url": ""
- }
-
- Have the .vscode folder in the main root, then create a launch.json file and have this configuration (this configuration is to safely handle apikys):
- {
- "version": "0.2.0",
- "settings": [
- {
- "name": "Start",
- "request": "release",
- "type": "dart",
- "program": "lib/main.dart",
- "arguments": [
-"--dart-define-from-file=api-keys.json"
- ]
- }
- ]
- }
+    Have the .vscode folder in the main root, then create a launch.json file and have this configuration (this configuration is to safely handle apikys):
+    {
+        "version": "0.2.0",
+        "settings": [
+         {
+          "name": "Start",
+          "request": "release",
+          "type": "dart",
+          "program": "lib/main.dart",
+          "arguments": [
+              "--dart-define-from-file=api-keys.json"
+                   ]
+         }
+        ]
+     }
 
 
 #Architecture
